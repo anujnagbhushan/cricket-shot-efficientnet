@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+.venv/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Python cache
+.pytest_cache/
+
+# TensorFlow
+*.h5
+
+# Logs
+*.log
+
+# Generated videos
+app/static/ai_vision/*.mp4
+app/static/uploads/*.mp4
+
+# Temporary files
+*.tmp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Cricket dataset
+dataset/
+
+# Extracted feature data
+features/
+features_b3/
+
+# Local database
+analysis.db
+
+# Experiment split data
+group_split.npz
+group_split_summary.json
+
+# Large generated arrays
+*.npy
+*.npz
+
+# Generated experiment artifacts
+artifacts/
+
+
+# Generated misclassification videos
+misclassification_audit/*.avi
+misclassification_audit/*.mp4
+
+# Generated misclassification videos
+misclassification_audit/**/*.avi
+misclassification_audit/**/*.mp4
+misclassification_audit/*.avi
+misclassification_audit/*.mp4
+
+# Uploaded/test videos
+app/static/uploads/*
+app/static/ai_vision/*.avi
+app/static/ai_vision/*.mov
+app/static/ai_vision/*.MOV
+app/static/ai_vision/*.mp4
+
+# Generated Grad-CAM outputs
+gradcam/output/*.mp4
+gradcam/output/**/*.jpg
+
+
+# Trained model files
+models/*.keras
+
+*.bak
+
+# Generated AI vision overlays
+app/static/ai_vision/overlays/
+
+
+# Backup source files
+*_backup.py
+

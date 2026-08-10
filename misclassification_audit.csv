@@ -1,0 +1,101 @@
+pair_rank,pair_total_count,test_position,original_index,true_id,true_class,predicted_id,predicted_class,confidence,video_path,audit_copy
+1,36,755,5264,7,Lofted Offside,6,Lofted Legside,0.9674890637397766,Lofted Offside/vid17_5.avi,misclassification_audit/01_Lofted_Offside_TO_Lofted_Legside/01__conf_096.75__vid17_5.avi
+1,36,731,5164,7,Lofted Offside,6,Lofted Legside,0.9605293273925781,Lofted Offside/vid100_32.avi,misclassification_audit/01_Lofted_Offside_TO_Lofted_Legside/02__conf_096.05__vid100_32.avi
+1,36,752,5261,7,Lofted Offside,6,Lofted Legside,0.945673406124115,Lofted Offside/vid17_11.avi,misclassification_audit/01_Lofted_Offside_TO_Lofted_Legside/03__conf_094.57__vid17_11.avi
+1,36,841,6016,7,Lofted Offside,6,Lofted Legside,0.9402338266372681,Lofted Offside/vid519_55.avi,misclassification_audit/01_Lofted_Offside_TO_Lofted_Legside/04__conf_094.02__vid519_55.avi
+1,36,789,5640,7,Lofted Offside,6,Lofted Legside,0.9317646026611328,Lofted Offside/vid398_14.avi,misclassification_audit/01_Lofted_Offside_TO_Lofted_Legside/05__conf_093.18__vid398_14.avi
+1,36,819,5873,7,Lofted Offside,6,Lofted Legside,0.9266220331192017,Lofted Offside/vid481_23.avi,misclassification_audit/01_Lofted_Offside_TO_Lofted_Legside/06__conf_092.66__vid481_23.avi
+1,36,761,5307,7,Lofted Offside,6,Lofted Legside,0.9253637790679932,Lofted Offside/vid217_57.avi,misclassification_audit/01_Lofted_Offside_TO_Lofted_Legside/07__conf_092.54__vid217_57.avi
+1,36,811,5741,7,Lofted Offside,6,Lofted Legside,0.913004457950592,Lofted Offside/vid43_34.avi,misclassification_audit/01_Lofted_Offside_TO_Lofted_Legside/08__conf_091.30__vid43_34.avi
+1,36,754,5263,7,Lofted Offside,6,Lofted Legside,0.9108542799949646,Lofted Offside/vid17_4.avi,misclassification_audit/01_Lofted_Offside_TO_Lofted_Legside/09__conf_091.09__vid17_4.avi
+1,36,859,6163,7,Lofted Offside,6,Lofted Legside,0.9080773591995239,Lofted Offside/vid89_37.avi,misclassification_audit/01_Lofted_Offside_TO_Lofted_Legside/10__conf_090.81__vid89_37.avi
+2,21,620,4257,6,Lofted Legside,2,Down The Wicket,0.9740796089172363,Lofted Legside/vid261_6.avi,misclassification_audit/02_Lofted_Legside_TO_Down_The_Wicket/01__conf_097.41__vid261_6.avi
+2,21,608,4187,6,Lofted Legside,2,Down The Wicket,0.9449119567871094,Lofted Legside/vid180_19.avi,misclassification_audit/02_Lofted_Legside_TO_Down_The_Wicket/02__conf_094.49__vid180_19.avi
+2,21,586,4053,6,Lofted Legside,2,Down The Wicket,0.9364680051803589,Lofted Legside/vid108_11.avi,misclassification_audit/02_Lofted_Legside_TO_Down_The_Wicket/03__conf_093.65__vid108_11.avi
+2,21,592,4157,6,Lofted Legside,2,Down The Wicket,0.9068287014961243,Lofted Legside/vid162_35.avi,misclassification_audit/02_Lofted_Legside_TO_Down_The_Wicket/04__conf_090.68__vid162_35.avi
+2,21,630,4319,6,Lofted Legside,2,Down The Wicket,0.8758290410041809,Lofted Legside/vid322_27.avi,misclassification_audit/02_Lofted_Legside_TO_Down_The_Wicket/05__conf_087.58__vid322_27.avi
+2,21,713,5089,6,Lofted Legside,2,Down The Wicket,0.8679791688919067,Lofted Legside/vid69_3.avi,misclassification_audit/02_Lofted_Legside_TO_Down_The_Wicket/06__conf_086.80__vid69_3.avi
+2,21,729,5152,6,Lofted Legside,2,Down The Wicket,0.7972992062568665,Lofted Legside/vid95_34.avi,misclassification_audit/02_Lofted_Legside_TO_Down_The_Wicket/07__conf_079.73__vid95_34.avi
+2,21,684,4804,6,Lofted Legside,2,Down The Wicket,0.6842958927154541,Lofted Legside/vid471_26.avi,misclassification_audit/02_Lofted_Legside_TO_Down_The_Wicket/08__conf_068.43__vid471_26.avi
+2,21,654,4598,6,Lofted Legside,2,Down The Wicket,0.6494750380516052,Lofted Legside/vid398_4.avi,misclassification_audit/02_Lofted_Legside_TO_Down_The_Wicket/09__conf_064.95__vid398_4.avi
+2,21,633,4350,6,Lofted Legside,2,Down The Wicket,0.608041524887085,Lofted Legside/vid335_8.avi,misclassification_audit/02_Lofted_Legside_TO_Down_The_Wicket/10__conf_060.80__vid335_8.avi
+3,17,510,3570,4,Hook,8,Pull,0.9779372811317444,Hook/vid478_2.avi,misclassification_audit/03_Hook_TO_Pull/01__conf_097.79__vid478_2.avi
+3,17,502,3533,4,Hook,8,Pull,0.9760404825210571,Hook/vid438_15.avi,misclassification_audit/03_Hook_TO_Pull/02__conf_097.60__vid438_15.avi
+3,17,534,3726,4,Hook,8,Pull,0.9595276117324829,Hook/vid89_3.avi,misclassification_audit/03_Hook_TO_Pull/03__conf_095.95__vid89_3.avi
+3,17,471,3322,4,Hook,8,Pull,0.9517723321914673,Hook/vid168_8.avi,misclassification_audit/03_Hook_TO_Pull/04__conf_095.18__vid168_8.avi
+3,17,511,3574,4,Hook,8,Pull,0.913135826587677,Hook/vid481_42.avi,misclassification_audit/03_Hook_TO_Pull/05__conf_091.31__vid481_42.avi
+3,17,514,3610,4,Hook,8,Pull,0.8846175670623779,Hook/vid499_22.avi,misclassification_audit/03_Hook_TO_Pull/06__conf_088.46__vid499_22.avi
+3,17,459,3230,4,Hook,8,Pull,0.8700150847434998,Hook/vid108_31.avi,misclassification_audit/03_Hook_TO_Pull/07__conf_087.00__vid108_31.avi
+3,17,513,3576,4,Hook,8,Pull,0.8632429242134094,Hook/vid481_6.avi,misclassification_audit/03_Hook_TO_Pull/08__conf_086.32__vid481_6.avi
+3,17,520,3638,4,Hook,8,Pull,0.848882794380188,Hook/vid516_33.avi,misclassification_audit/03_Hook_TO_Pull/09__conf_084.89__vid516_33.avi
+3,17,508,3556,4,Hook,8,Pull,0.832031786441803,Hook/vid464_36.avi,misclassification_audit/03_Hook_TO_Pull/10__conf_083.20__vid464_36.avi
+4,17,925,6679,8,Pull,4,Hook,0.998296320438385,Pull/vid464_38.avi,misclassification_audit/04_Pull_TO_Hook/01__conf_099.83__vid464_38.avi
+4,17,863,6188,8,Pull,4,Hook,0.9968743324279785,Pull/vid100_34.avi,misclassification_audit/04_Pull_TO_Hook/02__conf_099.69__vid100_34.avi
+4,17,906,6468,8,Pull,4,Hook,0.97419273853302,Pull/vid380_31.avi,misclassification_audit/04_Pull_TO_Hook/03__conf_097.42__vid380_31.avi
+4,17,889,6348,8,Pull,4,Hook,0.9465484619140625,Pull/vid25_45.avi,misclassification_audit/04_Pull_TO_Hook/04__conf_094.65__vid25_45.avi
+4,17,879,6278,8,Pull,4,Hook,0.9415088891983032,Pull/vid167_28.avi,misclassification_audit/04_Pull_TO_Hook/05__conf_094.15__vid167_28.avi
+4,17,883,6286,8,Pull,4,Hook,0.9177350997924805,Pull/vid17_10.avi,misclassification_audit/04_Pull_TO_Hook/06__conf_091.77__vid17_10.avi
+4,17,885,6293,8,Pull,4,Hook,0.9092482328414917,Pull/vid18_30.avi,misclassification_audit/04_Pull_TO_Hook/07__conf_090.92__vid18_30.avi
+4,17,884,6287,8,Pull,4,Hook,0.8886657357215881,Pull/vid17_20.avi,misclassification_audit/04_Pull_TO_Hook/08__conf_088.87__vid17_20.avi
+4,17,895,6382,8,Pull,4,Hook,0.8849902749061584,Pull/vid335_33.avi,misclassification_audit/04_Pull_TO_Hook/09__conf_088.50__vid335_33.avi
+4,17,935,6725,8,Pull,4,Hook,0.8838610053062439,Pull/vid484_21.avi,misclassification_audit/04_Pull_TO_Hook/10__conf_088.39__vid484_21.avi
+5,16,333,2422,3,Flick,1,Defensive,0.9994974136352539,Flick/vid167_20.avi,misclassification_audit/05_Flick_TO_Defensive/01__conf_099.95__vid167_20.avi
+5,16,311,2293,3,Flick,1,Defensive,0.9980297684669495,Flick/vid108_23.avi,misclassification_audit/05_Flick_TO_Defensive/02__conf_099.80__vid108_23.avi
+5,16,371,2672,3,Flick,1,Defensive,0.9976488947868347,Flick/vid307_0.avi,misclassification_audit/05_Flick_TO_Defensive/03__conf_099.76__vid307_0.avi
+5,16,301,2267,3,Flick,1,Defensive,0.9955589771270752,Flick/vid100_38.avi,misclassification_audit/05_Flick_TO_Defensive/04__conf_099.56__vid100_38.avi
+5,16,353,2500,3,Flick,1,Defensive,0.9882680773735046,Flick/vid222_26.avi,misclassification_audit/05_Flick_TO_Defensive/05__conf_098.83__vid222_26.avi
+5,16,341,2436,3,Flick,1,Defensive,0.9862881898880005,Flick/vid175_1.avi,misclassification_audit/05_Flick_TO_Defensive/06__conf_098.63__vid175_1.avi
+5,16,323,2398,3,Flick,1,Defensive,0.9767684936523438,Flick/vid156_32.avi,misclassification_audit/05_Flick_TO_Defensive/07__conf_097.68__vid156_32.avi
+5,16,320,2344,3,Flick,1,Defensive,0.9668443202972412,Flick/vid129_23.avi,misclassification_audit/05_Flick_TO_Defensive/08__conf_096.68__vid129_23.avi
+5,16,408,2987,3,Flick,1,Defensive,0.9096078276634216,Flick/vid464_19.avi,misclassification_audit/05_Flick_TO_Defensive/09__conf_090.96__vid464_19.avi
+5,16,411,2999,3,Flick,1,Defensive,0.8809416890144348,Flick/vid471_39.avi,misclassification_audit/05_Flick_TO_Defensive/10__conf_088.09__vid471_39.avi
+6,15,764,5349,7,Lofted Offside,2,Down The Wicket,0.979375958442688,Lofted Offside/vid287_4.avi,misclassification_audit/06_Lofted_Offside_TO_Down_The_Wicket/01__conf_097.94__vid287_4.avi
+6,15,759,5305,7,Lofted Offside,2,Down The Wicket,0.931677520275116,Lofted Offside/vid217_51.avi,misclassification_audit/06_Lofted_Offside_TO_Down_The_Wicket/02__conf_093.17__vid217_51.avi
+6,15,756,5265,7,Lofted Offside,2,Down The Wicket,0.9239291548728943,Lofted Offside/vid180_13.avi,misclassification_audit/06_Lofted_Offside_TO_Down_The_Wicket/03__conf_092.39__vid180_13.avi
+6,15,736,5178,7,Lofted Offside,2,Down The Wicket,0.919232189655304,Lofted Offside/vid104_5.avi,misclassification_audit/06_Lofted_Offside_TO_Down_The_Wicket/04__conf_091.92__vid104_5.avi
+6,15,738,5184,7,Lofted Offside,2,Down The Wicket,0.9080581068992615,Lofted Offside/vid107_6.avi,misclassification_audit/06_Lofted_Offside_TO_Down_The_Wicket/05__conf_090.81__vid107_6.avi
+6,15,767,5363,7,Lofted Offside,2,Down The Wicket,0.8706774711608887,Lofted Offside/vid305_20.avi,misclassification_audit/06_Lofted_Offside_TO_Down_The_Wicket/06__conf_087.07__vid305_20.avi
+6,15,851,6133,7,Lofted Offside,2,Down The Wicket,0.7542341947555542,Lofted Offside/vid69_2.avi,misclassification_audit/06_Lofted_Offside_TO_Down_The_Wicket/07__conf_075.42__vid69_2.avi
+6,15,745,5248,7,Lofted Offside,2,Down The Wicket,0.7509688138961792,Lofted Offside/vid162_26.avi,misclassification_audit/06_Lofted_Offside_TO_Down_The_Wicket/08__conf_075.10__vid162_26.avi
+6,15,839,6014,7,Lofted Offside,2,Down The Wicket,0.7370461821556091,Lofted Offside/vid519_34.avi,misclassification_audit/06_Lofted_Offside_TO_Down_The_Wicket/09__conf_073.70__vid519_34.avi
+6,15,749,5257,7,Lofted Offside,2,Down The Wicket,0.6952906250953674,Lofted Offside/vid177_16.avi,misclassification_audit/06_Lofted_Offside_TO_Down_The_Wicket/10__conf_069.53__vid177_16.avi
+7,14,674,4707,6,Lofted Legside,7,Lofted Offside,0.972534716129303,Lofted Legside/vid43_57.avi,misclassification_audit/07_Lofted_Legside_TO_Lofted_Offside/01__conf_097.25__vid43_57.avi
+7,14,655,4604,6,Lofted Legside,7,Lofted Offside,0.9056269526481628,Lofted Legside/vid3_18.avi,misclassification_audit/07_Lofted_Legside_TO_Lofted_Offside/02__conf_090.56__vid3_18.avi
+7,14,683,4803,6,Lofted Legside,7,Lofted Offside,0.881066620349884,Lofted Legside/vid471_23.avi,misclassification_audit/07_Lofted_Legside_TO_Lofted_Offside/03__conf_088.11__vid471_23.avi
+7,14,656,4605,6,Lofted Legside,7,Lofted Offside,0.8602833151817322,Lofted Legside/vid3_19.avi,misclassification_audit/07_Lofted_Legside_TO_Lofted_Offside/04__conf_086.03__vid3_19.avi
+7,14,583,4049,6,Lofted Legside,7,Lofted Offside,0.7591415047645569,Lofted Legside/vid104_15.avi,misclassification_audit/07_Lofted_Legside_TO_Lofted_Offside/05__conf_075.91__vid104_15.avi
+7,14,590,4140,6,Lofted Legside,7,Lofted Offside,0.7554758191108704,Lofted Legside/vid156_18.avi,misclassification_audit/07_Lofted_Legside_TO_Lofted_Offside/06__conf_075.55__vid156_18.avi
+7,14,609,4188,6,Lofted Legside,7,Lofted Offside,0.7203011512756348,Lofted Legside/vid180_6.avi,misclassification_audit/07_Lofted_Legside_TO_Lofted_Offside/07__conf_072.03__vid180_6.avi
+7,14,698,4937,6,Lofted Legside,7,Lofted Offside,0.7061641216278076,Lofted Legside/vid505_37.avi,misclassification_audit/07_Lofted_Legside_TO_Lofted_Offside/08__conf_070.62__vid505_37.avi
+7,14,688,4829,6,Lofted Legside,7,Lofted Offside,0.5706228017807007,Lofted Legside/vid481_20.avi,misclassification_audit/07_Lofted_Legside_TO_Lofted_Offside/09__conf_057.06__vid481_20.avi
+7,14,694,4847,6,Lofted Legside,7,Lofted Offside,0.5633549094200134,Lofted Legside/vid484_13.avi,misclassification_audit/07_Lofted_Legside_TO_Lofted_Offside/10__conf_056.34__vid484_13.avi
+8,12,953,6850,8,Pull,6,Lofted Legside,0.975174069404602,Pull/vid53_29.avi,misclassification_audit/08_Pull_TO_Lofted_Legside/01__conf_097.52__vid53_29.avi
+8,12,907,6469,8,Pull,6,Lofted Legside,0.9673155546188354,Pull/vid380_50.avi,misclassification_audit/08_Pull_TO_Lofted_Legside/02__conf_096.73__vid380_50.avi
+8,12,954,6851,8,Pull,6,Lofted Legside,0.9007028937339783,Pull/vid53_31.avi,misclassification_audit/08_Pull_TO_Lofted_Legside/03__conf_090.07__vid53_31.avi
+8,12,917,6603,8,Pull,6,Lofted Legside,0.8916971683502197,Pull/vid43_20.avi,misclassification_audit/08_Pull_TO_Lofted_Legside/04__conf_089.17__vid43_20.avi
+8,12,905,6450,8,Pull,6,Lofted Legside,0.6299283504486084,Pull/vid373_9.avi,misclassification_audit/08_Pull_TO_Lofted_Legside/05__conf_062.99__vid373_9.avi
+8,12,897,6389,8,Pull,6,Lofted Legside,0.608086347579956,Pull/vid345_20.avi,misclassification_audit/08_Pull_TO_Lofted_Legside/06__conf_060.81__vid345_20.avi
+8,12,936,6758,8,Pull,6,Lofted Legside,0.5982857346534729,Pull/vid499_11.avi,misclassification_audit/08_Pull_TO_Lofted_Legside/07__conf_059.83__vid499_11.avi
+8,12,892,6359,8,Pull,6,Lofted Legside,0.5495245456695557,Pull/vid287_21.avi,misclassification_audit/08_Pull_TO_Lofted_Legside/08__conf_054.95__vid287_21.avi
+8,12,890,6350,8,Pull,6,Lofted Legside,0.5266035795211792,Pull/vid261_22.avi,misclassification_audit/08_Pull_TO_Lofted_Legside/09__conf_052.66__vid261_22.avi
+8,12,958,6866,8,Pull,6,Lofted Legside,0.4941830039024353,Pull/vid63_20.avi,misclassification_audit/08_Pull_TO_Lofted_Legside/10__conf_049.42__vid63_20.avi
+9,12,1057,7524,11,Square Cut,5,Late Cut,0.9656654000282288,Square Cut/vid126_35.avi,misclassification_audit/09_Square_Cut_TO_Late_Cut/01__conf_096.57__vid126_35.avi
+9,12,1178,8433,11,Square Cut,5,Late Cut,0.9554662704467773,Square Cut/vid70_36.avi,misclassification_audit/09_Square_Cut_TO_Late_Cut/02__conf_095.55__vid70_36.avi
+9,12,1137,8115,11,Square Cut,5,Late Cut,0.9019399285316467,Square Cut/vid438_13.avi,misclassification_audit/09_Square_Cut_TO_Late_Cut/03__conf_090.19__vid438_13.avi
+9,12,1182,8462,11,Square Cut,5,Late Cut,0.8824930191040039,Square Cut/vid89_0.avi,misclassification_audit/09_Square_Cut_TO_Late_Cut/04__conf_088.25__vid89_0.avi
+9,12,1147,8172,11,Square Cut,5,Late Cut,0.878055989742279,Square Cut/vid456_3.avi,misclassification_audit/09_Square_Cut_TO_Late_Cut/05__conf_087.81__vid456_3.avi
+9,12,1172,8422,11,Square Cut,5,Late Cut,0.8585248589515686,Square Cut/vid63_0.avi,misclassification_audit/09_Square_Cut_TO_Late_Cut/06__conf_085.85__vid63_0.avi
+9,12,1103,7733,11,Square Cut,5,Late Cut,0.8328395485877991,Square Cut/vid233_12.avi,misclassification_audit/09_Square_Cut_TO_Late_Cut/07__conf_083.28__vid233_12.avi
+9,12,1166,8340,11,Square Cut,5,Late Cut,0.8238322138786316,Square Cut/vid519_33.avi,misclassification_audit/09_Square_Cut_TO_Late_Cut/08__conf_082.38__vid519_33.avi
+9,12,1149,8174,11,Square Cut,5,Late Cut,0.6075790524482727,Square Cut/vid456_9.avi,misclassification_audit/09_Square_Cut_TO_Late_Cut/09__conf_060.76__vid456_9.avi
+9,12,1115,7806,11,Square Cut,5,Late Cut,0.5943065881729126,Square Cut/vid261_28.avi,misclassification_audit/09_Square_Cut_TO_Late_Cut/10__conf_059.43__vid261_28.avi
+10,11,517,3623,4,Hook,14,Upper Cut,0.9991123080253601,Hook/vid505_30.avi,misclassification_audit/10_Hook_TO_Upper_Cut/01__conf_099.91__vid505_30.avi
+10,11,482,3359,4,Hook,14,Upper Cut,0.998992383480072,Hook/vid225_6.avi,misclassification_audit/10_Hook_TO_Upper_Cut/02__conf_099.90__vid225_6.avi
+10,11,460,3274,4,Hook,14,Upper Cut,0.9973682761192322,Hook/vid126_40.avi,misclassification_audit/10_Hook_TO_Upper_Cut/03__conf_099.74__vid126_40.avi
+10,11,484,3364,4,Hook,14,Upper Cut,0.9970062375068665,Hook/vid233_36.avi,misclassification_audit/10_Hook_TO_Upper_Cut/04__conf_099.70__vid233_36.avi
+10,11,451,3220,4,Hook,14,Upper Cut,0.9878029227256775,Hook/vid104_31.avi,misclassification_audit/10_Hook_TO_Upper_Cut/05__conf_098.78__vid104_31.avi
+10,11,519,3625,4,Hook,14,Upper Cut,0.9785297513008118,Hook/vid505_45.avi,misclassification_audit/10_Hook_TO_Upper_Cut/06__conf_097.85__vid505_45.avi
+10,11,518,3624,4,Hook,14,Upper Cut,0.9636170268058777,Hook/vid505_42.avi,misclassification_audit/10_Hook_TO_Upper_Cut/07__conf_096.36__vid505_42.avi
+10,11,488,3394,4,Hook,14,Upper Cut,0.9298355579376221,Hook/vid265_13.avi,misclassification_audit/10_Hook_TO_Upper_Cut/08__conf_092.98__vid265_13.avi
+10,11,495,3419,4,Hook,14,Upper Cut,0.8247628211975098,Hook/vid307_2.avi,misclassification_audit/10_Hook_TO_Upper_Cut/09__conf_082.48__vid307_2.avi
+10,11,496,3427,4,Hook,14,Upper Cut,0.8156433701515198,Hook/vid335_23.avi,misclassification_audit/10_Hook_TO_Upper_Cut/10__conf_081.56__vid335_23.avi

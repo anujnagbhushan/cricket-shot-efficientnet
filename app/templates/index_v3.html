@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Cricket Shot Analysis</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style_v3.css') }}">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ========================= -->
+    <!-- Toolbar -->
+    <!-- ========================= -->
+
+    <header class="toolbar">
+
+        <div class="toolbar-left">
+
+            <h1>CRICKET SHOT ANALYSIS</h1>
+
+            <span class="build">
+                Build v1.0
+            </span>
+
+        </div>
+
+        <div class="toolbar-right">
+
+            <span id="sessionNumber">
+                SESSION 001
+            </span>
+
+            <span id="systemStatus">
+                READY
+            </span>
+
+            <span id="clock">
+                --:--:--
+            </span>
+
+        </div>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- Main Layout -->
+    <!-- ========================= -->
+
+    <div class="main-layout">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <h2>CSA</h2>
+
+                <p>Computer Vision Workstation</p>
+
+            </div>
+
+            <section class="sidebar-block">
+
+                <h3>Status</h3>
+
+                <p id="sidebarStatus">
+                    READY
+                </p>
+
+            </section>
+
+            <section class="sidebar-block">
+
+                <h3>Model</h3>
+
+                <p>EfficientNet-B3</p>
+                <p>GRU Classifier</p>
+
+            </section>
+
+            <section class="sidebar-block">
+
+                <h3>Device</h3>
+
+                <p>Apple M3</p>
+                <p>Metal</p>
+
+            </section>
+
+            <section class="sidebar-block">
+
+                <h3>Video</h3>
+
+                <p id="videoResolution">--</p>
+                <p id="videoFPS">--</p>
+
+            </section>
+
+        </aside>
+
+        <!-- Workspace -->
+
+        <main class="workspace">
+
+            <!-- ========================= -->
+            <!-- Session Information -->
+            <!-- ========================= -->
+
+            <section class="panel">
+
+                <div class="panel-header">
+
+                    SESSION INFORMATION
+
+                </div>
+
+                <div class="panel-body">
+
+                    <div class="session-grid">
+
+                        <div class="form-group">
+
+                            <label for="batsmanName">
+                                Batsman Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="batsmanName"
+                                placeholder="Enter batsman name">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="matchFormat">
+                                Match Format
+                            </label>
+
+                            <select id="matchFormat">
+
+                                <option>T20</option>
+                                <option>ODI</option>
+                                <option>Test</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="battingHand">
+                                Playing Hand
+                            </label>
+
+                            <select id="battingHand">
+
+                                <option>Right Handed</option>
+                                <option>Left Handed</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="sessionId">
+                                Session ID
+                            </label>
+
+                            <input
+                                type="text"
+                                id="sessionId"
+                                value="001"
+                                readonly>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+      
+                        <!-- ========================= -->
+            <!-- Video Input -->
+            <!-- ========================= -->
+
+            <section class="panel">
+
+                <div class="panel-header">
+
+                    VIDEO INPUT
+
+                </div>
+
+                <div class="panel-body">
+
+                    <form id="uploadForm" class="upload-form">
+
+                        <div class="file-group">
+
+                            <input
+                                type="file"
+                                id="video"
+                                name="video"
+                                accept="video/*">
+
+                        </div>
+
+                        <div class="button-group">
+
+                            <button
+                                type="submit"
+                                id="analyzeButton"
+                                class="primary-button">
+
+                                Analyze Video
+
+                            </button>
+
+                            <button
+                                type="button"
+                                id="resetButton"
+                                class="secondary-button">
+
+                                Reset
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+            <!-- ========================= -->
+            <!-- Live AI Terminal -->
+            <!-- ========================= -->
+
+            <section class="panel">
+
+                <div class="panel-header">
+
+                    LIVE AI TERMINAL
+
+                </div>
+
+                <div class="panel-body">
+
+                    <div id="terminal" class="terminal">
+
+                        <div class="terminal-line">
+
+                            <span class="time">
+                                --:--:--
+                            </span>
+
+                            <span class="info">
+                                Waiting for video...
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+                        <!-- ========================= -->
+            <!-- Video Analysis -->
+            <!-- ========================= -->
+
+            <section class="panel">
+
+                <div class="panel-header">
+
+                    VIDEO ANALYSIS
+
+                </div>
+
+                <div class="panel-body">
+
+                    <div class="video-workspace">
+
+                        <!-- Original Video -->
+
+                        <div class="video-viewer">
+
+                            <div class="viewer-header">
+
+                                ORIGINAL VIDEO
+
+                            </div>
+
+                            <div class="viewer-body">
+
+                                <video
+                                    id="originalVideo"
+                                    controls>
+
+                                </video>
+
+                            </div>
+
+                        </div>
+
+                        <!-- AI Vision -->
+
+                        <div class="video-viewer">
+
+                            <div class="viewer-header">
+
+                                AI VISION + GRAD-CAM
+
+                            </div>
+
+                            <div class="viewer-body">
+
+                                <video
+                                    id="aiVideo"
+                                    controls>
+
+                                </video>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ========================= -->
+            <!-- Model Output -->
+            <!-- ========================= -->
+
+            <section class="panel">
+
+                <div class="panel-header">
+
+                    MODEL OUTPUT
+
+                </div>
+
+                <div class="panel-body">
+
+                    <div class="output-grid">
+
+                        <div class="output-item">
+
+                            <span class="output-label">
+
+                                Shot Type
+
+                            </span>
+
+                            <span
+                                id="prediction"
+                                class="output-value">
+
+                                --
+
+                            </span>
+
+                        </div>
+
+                        <div class="output-item">
+
+                            <span class="output-label">
+
+                                Confidence
+
+                            </span>
+
+                            <span
+                                id="confidence"
+                                class="output-value">
+
+                                --
+
+                            </span>
+
+                        </div>
+
+                        <div class="output-item">
+
+                            <span class="output-label">
+
+                                Inference Time
+
+                            </span>
+
+                            <span
+                                id="time"
+                                class="output-value">
+
+                                --
+
+                            </span>
+
+                        </div>
+
+                        <div class="output-item">
+
+                            <span class="output-label">
+
+                                System Status
+
+                            </span>
+
+                            <span
+                                id="statusText"
+                                class="output-value">
+
+                                READY
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ========================= -->
+            <!-- Top Predictions -->
+            <!-- ========================= -->
+
+            <section class="panel">
+
+                <div class="panel-header">
+
+                    TOP PREDICTIONS
+
+                </div>
+
+                <div class="panel-body">
+
+                    <table class="prediction-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Rank</th>
+                                <th>Shot Type</th>
+                                <th>Confidence</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="topPredictions">
+
+                            <tr>
+
+                                <td>1</td>
+                                <td>--</td>
+                                <td>--</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>2</td>
+                                <td>--</td>
+                                <td>--</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>3</td>
+                                <td>--</td>
+                                <td>--</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>4</td>
+                                <td>--</td>
+                                <td>--</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>5</td>
+                                <td>--</td>
+                                <td>--</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+                        <!-- ========================= -->
+            <!-- Coach Verification -->
+            <!-- ========================= -->
+
+            <section class="panel">
+
+                <div class="panel-header">
+
+                    COACH VERIFICATION
+
+                </div>
+
+                <div class="panel-body">
+
+                    <div class="verification-grid">
+
+                        <div class="form-group">
+
+                            <label for="predictionCorrect">
+
+                                Prediction Correct?
+
+                            </label>
+
+                            <select id="predictionCorrect">
+
+                                <option>Yes</option>
+                                <option>No</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="correctLabel">
+
+                                Correct Label
+
+                            </label>
+
+                            <select id="correctLabel">
+
+                                <option>Cover Drive</option>
+                                <option>Straight Drive</option>
+                                <option>Pull</option>
+                                <option>Hook</option>
+                                <option>Flick</option>
+                                <option>Square Cut</option>
+                                <option>Late Cut</option>
+                                <option>Scoop</option>
+                                <option>Reverse Sweep</option>
+                                <option>Defensive</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div class="button-group" style="margin-top:20px;">
+
+                          <button
+    id="saveBtn"
+    type="button"
+    class="primary-button">
+    Save Result
+</button>
+
+                        <button
+    id="nextBtn"
+    type="button"
+    class="secondary-button">
+    Next Clip
+</button>
+
+                        
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script_v3.js') }}"></script>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
+

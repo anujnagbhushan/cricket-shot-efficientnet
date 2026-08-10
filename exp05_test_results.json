@@ -1,0 +1,213 @@
+{
+    "model_file": "models/exp05_efficientnetb3_gru.keras",
+    "test_samples": 1421,
+    "test_groups": 81,
+    "test_accuracy": 0.661505981703026,
+    "classification_report": {
+        "Cover Drive": {
+            "precision": 0.7545454545454545,
+            "recall": 0.7217391304347827,
+            "f1-score": 0.7377777777777778,
+            "support": 115.0
+        },
+        "Defensive": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1-score": 0.75,
+            "support": 92.0
+        },
+        "Down The Wicket": {
+            "precision": 0.5663716814159292,
+            "recall": 0.6808510638297872,
+            "f1-score": 0.6183574879227053,
+            "support": 94.0
+        },
+        "Flick": {
+            "precision": 0.7388535031847133,
+            "recall": 0.8226950354609929,
+            "f1-score": 0.7785234899328859,
+            "support": 141.0
+        },
+        "Hook": {
+            "precision": 0.7088607594936709,
+            "recall": 0.5894736842105263,
+            "f1-score": 0.6436781609195402,
+            "support": 95.0
+        },
+        "Late Cut": {
+            "precision": 0.4594594594594595,
+            "recall": 0.40476190476190477,
+            "f1-score": 0.43037974683544306,
+            "support": 42.0
+        },
+        "Lofted Legside": {
+            "precision": 0.6025641025641025,
+            "recall": 0.6225165562913907,
+            "f1-score": 0.6123778501628665,
+            "support": 151.0
+        },
+        "Lofted Offside": {
+            "precision": 0.6074766355140186,
+            "recall": 0.4961832061068702,
+            "f1-score": 0.5462184873949579,
+            "support": 131.0
+        },
+        "Pull": {
+            "precision": 0.5573770491803278,
+            "recall": 0.6415094339622641,
+            "f1-score": 0.5964912280701754,
+            "support": 106.0
+        },
+        "Reverse Sweep": {
+            "precision": 0.6458333333333334,
+            "recall": 0.7380952380952381,
+            "f1-score": 0.6888888888888889,
+            "support": 42.0
+        },
+        "Scoop": {
+            "precision": 0.5849056603773585,
+            "recall": 0.7948717948717948,
+            "f1-score": 0.6739130434782609,
+            "support": 39.0
+        },
+        "Square Cut": {
+            "precision": 0.7254901960784313,
+            "recall": 0.5441176470588235,
+            "f1-score": 0.6218487394957983,
+            "support": 136.0
+        },
+        "Straight Drive": {
+            "precision": 0.7222222222222222,
+            "recall": 0.7323943661971831,
+            "f1-score": 0.7272727272727273,
+            "support": 71.0
+        },
+        "Sweep": {
+            "precision": 0.7833333333333333,
+            "recall": 0.752,
+            "f1-score": 0.7673469387755102,
+            "support": 125.0
+        },
+        "Upper Cut": {
+            "precision": 0.49056603773584906,
+            "recall": 0.6341463414634146,
+            "f1-score": 0.5531914893617021,
+            "support": 41.0
+        },
+        "accuracy": 0.661505981703026,
+        "macro avg": {
+            "precision": 0.6465239618958802,
+            "recall": 0.6616903601829983,
+            "f1-score": 0.6497510704192826,
+            "support": 1421.0
+        },
+        "weighted avg": {
+            "precision": 0.6667053512242743,
+            "recall": 0.661505981703026,
+            "f1-score": 0.6602687790925247,
+            "support": 1421.0
+        }
+    },
+    "top_confusions": [
+        {
+            "count": 28,
+            "true_class": "Lofted Offside",
+            "predicted_class": "Lofted Legside"
+        },
+        {
+            "count": 22,
+            "true_class": "Lofted Legside",
+            "predicted_class": "Lofted Offside"
+        },
+        {
+            "count": 19,
+            "true_class": "Lofted Offside",
+            "predicted_class": "Down The Wicket"
+        },
+        {
+            "count": 19,
+            "true_class": "Hook",
+            "predicted_class": "Pull"
+        },
+        {
+            "count": 14,
+            "true_class": "Square Cut",
+            "predicted_class": "Pull"
+        },
+        {
+            "count": 13,
+            "true_class": "Lofted Legside",
+            "predicted_class": "Down The Wicket"
+        },
+        {
+            "count": 12,
+            "true_class": "Hook",
+            "predicted_class": "Upper Cut"
+        },
+        {
+            "count": 11,
+            "true_class": "Square Cut",
+            "predicted_class": "Upper Cut"
+        },
+        {
+            "count": 11,
+            "true_class": "Square Cut",
+            "predicted_class": "Late Cut"
+        },
+        {
+            "count": 11,
+            "true_class": "Lofted Legside",
+            "predicted_class": "Pull"
+        },
+        {
+            "count": 10,
+            "true_class": "Pull",
+            "predicted_class": "Hook"
+        },
+        {
+            "count": 10,
+            "true_class": "Defensive",
+            "predicted_class": "Flick"
+        },
+        {
+            "count": 9,
+            "true_class": "Straight Drive",
+            "predicted_class": "Cover Drive"
+        },
+        {
+            "count": 9,
+            "true_class": "Pull",
+            "predicted_class": "Lofted Legside"
+        },
+        {
+            "count": 9,
+            "true_class": "Late Cut",
+            "predicted_class": "Defensive"
+        },
+        {
+            "count": 8,
+            "true_class": "Sweep",
+            "predicted_class": "Reverse Sweep"
+        },
+        {
+            "count": 8,
+            "true_class": "Reverse Sweep",
+            "predicted_class": "Scoop"
+        },
+        {
+            "count": 8,
+            "true_class": "Down The Wicket",
+            "predicted_class": "Lofted Legside"
+        },
+        {
+            "count": 7,
+            "true_class": "Sweep",
+            "predicted_class": "Lofted Legside"
+        },
+        {
+            "count": 7,
+            "true_class": "Flick",
+            "predicted_class": "Defensive"
+        }
+    ]
+}

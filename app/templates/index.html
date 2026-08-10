@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cricket Shot AI</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="app-wrapper">
+
+    <!-- ========================= -->
+    <!-- Sidebar                   -->
+    <!-- ========================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <h2>CRICKET</h2>
+            <h2>SHOT AI</h2>
+
+            <span class="brand-subtitle">
+                Video Analytics Platform
+            </span>
+
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <a href="#" class="menu-item active">
+
+                <i class="bi bi-grid"></i>
+
+                Dashboard
+
+            </a>
+
+            <a href="#" class="menu-item">
+
+                <i class="bi bi-bar-chart"></i>
+
+                Analytics
+
+            </a>
+
+            <a href="#" class="menu-item">
+
+                <i class="bi bi-camera-video"></i>
+
+                AI Vision
+
+            </a>
+
+            <a href="#" class="menu-item">
+
+                <i class="bi bi-file-earmark-text"></i>
+
+                Reports
+
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+
+            <div class="model-box">
+
+                <span class="model-title">
+                    MODEL
+                </span>
+
+                <span class="model-name">
+
+                    EfficientNet-B3
+
+                </span>
+
+                <span class="model-name">
+
+                    GRU Classifier
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- ========================= -->
+    <!-- Main Content              -->
+    <!-- ========================= -->
+
+    <main class="content">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Cricket Shot AI
+                </h1>
+
+                <p>
+
+                    Professional Cricket Video Analytics Dashboard
+
+                </p>
+
+            </div>
+
+            <div class="status-pill" id="processingCard">
+
+                <span class="status-dot"></span>
+
+                <span id="statusText">
+
+                    READY
+
+                </span>
+
+            </div>
+
+        </header>
+
+        <!-- Upload Section -->
+
+        <section class="upload-section">
+
+            <div class="glass-card upload-card">
+
+                <h3>
+
+                    Upload Match Video
+
+                </h3>
+
+                <p>
+
+                    Supported Formats :
+                    MP4 • MOV • AVI
+
+                </p>
+
+                <form id="uploadForm">
+
+                    <input
+                        type="file"
+                        id="video"
+                        class="form-control"
+                        accept=".mp4,.mov,.avi"
+                        required
+                    >
+
+                    <button
+                        type="submit"
+                        class="analyze-btn">
+
+                        Analyze Video
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+                <!-- ========================================= -->
+        <!-- Statistics Cards -->
+        <!-- ========================================= -->
+
+        <section class="stats-section">
+
+            <div class="stat-card">
+
+                <span class="stat-label">
+                    SHOT TYPE
+                </span>
+
+                <h2 id="prediction">
+
+                    --
+
+                </h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <span class="stat-label">
+                    CONFIDENCE
+                </span>
+
+                <h2 id="confidence">
+
+                    --
+
+                </h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <span class="stat-label">
+                    INFERENCE
+                </span>
+
+                <h2 id="time">
+
+                    --
+
+                </h2>
+
+            </div>
+
+            <div class="stat-card">
+
+                <span class="stat-label">
+                    MODEL
+                </span>
+
+                <h2>
+
+                    EfficientNet-B3 + GRU
+
+                </h2>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================= -->
+        <!-- Video Comparison -->
+        <!-- ========================================= -->
+
+        <section class="video-grid">
+
+            <!-- Original Video -->
+
+            <div class="glass-card video-card">
+
+                <div class="card-header">
+
+                    <h3>
+
+                        ORIGINAL VIDEO
+
+                    </h3>
+
+                </div>
+
+                <video
+
+                    id="originalVideo"
+
+                    controls
+
+                    preload="metadata"
+
+                ></video>
+
+            </div>
+
+
+
+            <!-- AI Vision -->
+
+            <div class="glass-card video-card">
+
+                <div class="card-header">
+
+                    <h3>
+
+                        AI VISION
+
+                    </h3>
+
+                </div>
+
+                <video
+
+                    id="aiVideo"
+
+                    controls
+
+                    preload="metadata"
+
+                ></video>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================= -->
+        <!-- Bottom Grid -->
+        <!-- ========================================= -->
+
+        <section class="bottom-grid">
+
+            <!-- Top Predictions -->
+
+            <div class="glass-card">
+
+                <div class="card-header">
+
+                    <h3>
+
+                        TOP PREDICTIONS
+
+                    </h3>
+
+                </div>
+
+                <div id="topPredictions">
+
+                    Waiting for prediction...
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Match Summary -->
+
+            <div class="glass-card">
+
+                <div class="card-header">
+
+                    <h3>
+
+                        MATCH SUMMARY
+
+                    </h3>
+
+                </div>
+
+                <div id="summary">
+
+                    <div class="summary-row">
+
+                        <span>Shot</span>
+
+                        <strong>--</strong>
+
+                    </div>
+
+                    <div class="summary-row">
+
+                        <span>Confidence</span>
+
+                        <strong>--</strong>
+
+                    </div>
+
+                    <div class="summary-row">
+
+                        <span>Inference</span>
+
+                        <strong>--</strong>
+
+                    </div>
+
+                    <div class="summary-row">
+
+                        <span>Frames</span>
+
+                        <strong>30</strong>
+
+                    </div>
+
+                    <div class="summary-row">
+
+                        <span>Model</span>
+
+                        <strong>
+
+                            EfficientNet-B3 + GRU
+
+                        </strong>
+
+                    </div>
+
+                    <div class="summary-row">
+
+                        <span>Status</span>
+
+                        <strong>
+
+                            Ready
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Footer -->
+
+        <footer class="footer">
+
+            <span>
+
+                Cricket Shot AI Dashboard
+
+            </span>
+
+            <span>
+
+                Version 2.0
+
+            </span>
+
+        </footer>
+
+    </main>
+
+</div>
+
+<!-- Bootstrap -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript -->
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
