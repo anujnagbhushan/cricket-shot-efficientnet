@@ -136,5 +136,14 @@ Grad-CAM visualizations help understand which regions of the image influence the
 GitHub: https://github.com/anujnagbhushan
 
 ---
+## 🎥 Project Demo
+
+Watch the complete demonstration of the AI-powered cricket shot analysis system.
+
+[![Cricket Shot Analysis Demo](https://img.youtube.com/vi/ABC123xyz/maxresdefault.jpg)](https://www.youtube.com/watch?v=I5lrV2_MItI)
+
+*Click the thumbnail to watch the full project demonstration.*
+
+
 
 ⭐ If you find this project interesting, consider giving the repository a star!
