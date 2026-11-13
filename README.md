@@ -140,11 +140,6 @@ GitHub: https://github.com/anujnagbhushan
 
 Watch the complete project demonstration to understand how the AI-powered cricket shot analysis system works.
 
-[![Cricket Shot Analysis Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=I5lrV2_MItI)
-
-*Click the thumbnail above to watch the 3-minute project demonstration.*
-
-
-
+[![Cricket Shot Analysis Demo](https://img.youtube.com/vi/I5lrV2_MItI/maxresdefault.jpg)](https://www.youtube.com/watch?v=I5lrV2_MItI)
 
 ⭐ If you find this project interesting, consider giving the repository a star!
